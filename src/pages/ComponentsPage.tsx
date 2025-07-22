@@ -1,4 +1,5 @@
 import { TestimonialCard } from "@/components/marketing/testimonial-card";
+import { BlogCard } from "@/components/marketing/blog-card";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const ComponentsPage = () => {
@@ -29,6 +30,30 @@ export const ComponentsPage = () => {
                   name="John Doe"
                   username="johndoe"
                   testimonial="Amazing component!"
+                />
+              </div>
+              <span className="px-2 py-1 text-sm text-green-800 bg-green-100 rounded-full">
+                ✅ Ready
+              </span>
+            </CardContent>
+          </Card>
+
+          {/* Blog Card - NOVO! */}
+          <Card className="transition-shadow hover:shadow-lg">
+            <CardHeader>
+              <CardTitle className="text-xl">Blog Card</CardTitle>
+              <p className="text-sm text-gray-600">
+                Showcase blog posts with images and excerpts
+              </p>
+            </CardHeader>
+            <CardContent>
+              <div className="flex justify-center mb-4">
+                <BlogCard
+                  title="Modern Design Trends"
+                  excerpt="Explore the latest in UI design and user experience."
+                  imageUrl="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop"
+                  imageAlt="Design trends"
+                  badge="Design"
                 />
               </div>
               <span className="px-2 py-1 text-sm text-green-800 bg-green-100 rounded-full">
